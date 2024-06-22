@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>John Katzenbach</title>
+</head>
+<body id="fondo">
+    <header>
+        <div>
+            <h2 class="logo">john Katzenbach</h2>           
+        </div>
+        
+        <div class="contenedor-botones-nav">           
+            <div class="botones">
+                <button id="menu-hamburguesa"><img src="../images/menuhamburguesa.png" alt="menu-hamburguesa"></button>
+                <button id="boton-modo-claro"><img src="../images/modoclaro.png" alt="modo-claro"></button>
+            </div>
+            
+            <nav id="nav">
+                <ul>
+                    <li> <a href="../inicio.html">Inicio</a></li>
+                    <li> <a href="../indexs/biografia.html">Biografia</a></li>
+                    <li> <a href="../indexs/bibliografia.html">Bibliografia</a></li>
+                </ul>
+            </nav>            
+        </div>        
+    </header>
+
+    <section class="lista-de-libros">
+        <h3>lista de libros</h3>
+        <p>En este apartado encontramos las obras mas importantes del autor, ordenadas por año en la siguiente tabla que esta a continuacion:</p>
+    </section>
+    <section class="agregar-libro">
+        <h2>Agregar Libro</h2>
+        <form id="libros-form">
+            <label>Titulo</label>
+            <input type="text" id="nombre" required>
+            <label>Tipo</label>
+            <input type="text" id="tipo" required>
+            <label>Año</label>
+            <input type="number" id="anio" required>
+            <div class="contenedor-boton">
+                <button id="btn-agregar-libro" class="boton-enviar" type="submit">Agregar</button>
+            </div>
+        </form>
+    </section>
+    <section class="contenedor-tabla">
+
+        <table class="tabladelibros">            
+            <thead>
+                <tr>
+                    <th>titulo</th>
+                    <th>tipo</th>
+                    <th>año</th>
+                    <th>acciones</th>
+                </tr>
+            </thead>
+            <tbody id="body">
+                
+            </tbody>
+            
+        </table>
+
+    </section>
+    <section class="contenedor-form-editar mostrar">
+        <form id="form_editar">
+            <label for="">Titulo</label>
+            <input type="text" id="nuevo_titulo">
+            <label for="">Tipo</label>
+            <input type="text" id="nuevo_tipo">
+            <label for="">Año</label>
+            <input type="number" id="nuevo_anio">
+        </form>
+    </section>
+    <footer>
+        <h6>seguinos en las redes</h6>
+
+        <div class="social">
+            <div>
+                <a href="https://www.facebook.com/authorjohnkatzenbach/?locale=es_LA" target="_blank">
+                    <img src="../images/logo de facebook.jpg" alt="logofacebook">
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.instagram.com/katzenbachjohn/" target="_blank">
+                    <img src="../images/logo de instagram.jpg" alt="logoinstagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/tabladinamica.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #6b6b75;
+    color: whitesmoke;
+}
+
+header{
+    height: 100px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    color: #2AB580;
+    display: flex;
+
+}
+nav{
+    display: none;
+}
+
+nav ul{
+    display: block;
+    list-style: none;
+    padding: 0px;
+}
+
+nav ul li a{
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover{
+    color: #2AB580;
+}
+
+.botones{
+    display: flex;
+}
+
+.cambiar-tema{
+    background: whitesmoke;
+    color: #6b6b75;
+}
+
+.mostrar-menu {
+    display: block;
+    background-color: #2AB580 ;
+}
+
+#menu-hamburguesa img{
+    height: 15px;
+    width: 15px;
+}
+
+#boton-modo-claro img{
+    height: 15px;
+    width: 15px;
+}
+
+.modo-claro{
+    background-color: whitesmoke;
+    color: black;
+}
+.modo-claro nav ul li a{
+    color: #2AB580;
+}
+.modo-claro nav ul li a:hover{
+    color: #6b6b75;
+}
+
+
+.contenido-banner{
+    position: relative;
+    color: whitesmoke;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#banner{
+    padding: 0 50px;
+    background-image: url(images/libropsicoanalista.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner::before{
+    content:'';
+    background: rgba(77, 77, 92, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    left: 0;
+}
+
+
+
+.boton-banner{
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid #2AB580;
+    padding: 10px 20px;
+    align-self: baseline;
+    transition: all 0.4s;
+    text-transform: uppercase;
+}
+
+.boton-banner:hover{
+    background: #2AB58070;
+}
+
+#contacto{
+    padding: 50px 0px;
+}
+
+#contacto h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.datos-personales div{
+    padding: 10px;
+    flex: 1;
+}
+
+form label{
+    display: block;
+    padding: 10px 0px;
+}
+
+form input, form textarea{
+    background: #f2f5f4;
+    border-radius: 5px;
+    border: 2px solid #2AB580;
+    padding: 10px 5px;
+    outline: 0;
+    color: rgb(8, 8, 8);
+    width: 100%;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: rgba(8, 8, 8, 0.39);
+}
+
+.contenedor-textarea, .contenedor-captcha{
+    padding: 10px;
+}
+
+.boton-enviar{
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    text-align: center;
+    transition: 0.4s;
+    background: #2AB580;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
+}
+
+.boton-enviar:hover{
+    background: #2AB58070;
+}
+
+footer{
+    background: #2AB580;
+    padding: 20px 0px;
+    color: whitesmoke;
+}
+
+footer h6{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 20px
+}
+
+footer .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a img{
+    width: 50px;
+    height: 50px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.resumen, .trayectoria{
+    background-color: #2AB580;
+    color: whitesmoke;
+    padding: 10px 50px;
+}
+
+.biografia, .obras{
+    padding: 10px 50px;
+}
+
+.fotocarnet{
+    width: 200px;
+    height: 250px;
+}
+
+.resumen{
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-de-libros{
+    background-color: #2AB580;
+    padding: 0px 50px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.contenedor-tabla{
+    display: flex;
+    justify-content: center;
+}
+
+.tabladelibros{
+    margin: 20px 20px;
+    padding: 10px 10px;
+    border-color: #2AB580;
+    border-style: ridge;
+    width: 60vw;
+}
+
+.tabladelibros thead tr th{
+    background-color: #2AB580;
+    text-transform: uppercase;
+    font-size: 20x;
+}
+
+.tabladelibros tbody tr td{
+    text-transform: capitalize;
+    padding: 10px 10px;
+    border-bottom: solid 1px #2AB580;
+}
+
+.tabladelibros tbody tr td a{
+    text-decoration: none;
+    
+    text-transform: capitalize;
+}
+
+.tabladelibros tbody tr td a:hover{
+    color: #2AB580;
+    transition: 0,4s;
+}
+.agregar-libro {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.tabladelibros button {
+    background-color: #2AB580;
+    width: 90%;
+    margin: 5px;
+}
+.mostrar{
+    display: none;
+}
+.contenedor-form-editar {
+    max-width: 80%;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 768px){
+    nav ul{
+        display: flex;
+    }
+    #menu-hamburguesa{
+        display: none;
+    }
+    .contenedor-botones-nav{
+        display: flex;
+        flex-direction: row-reverse;
+    }           
+
+    nav{
+        display: block;
+    }
+    #boton-modo-claro img{
+        height: 15px;
+        width: 15px;
+    }
+    .datos-personales{
+        display: flex;
+    }
+    .contenido-banner{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .resumen{
+        flex-direction: row;
+    }
+    .tabladelibros button {
+        width: 45%;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>John Katzenbach</title>
+</head>
+<body id="fondo">
+    <header>
+        <div>
+            <h2 class="logo">john Katzenbach</h2>           
+        </div>
+        
+        <div class="contenedor-botones-nav">           
+            <div class="botones">
+                <button id="menu-hamburguesa"><img src="images/menuhamburguesa.png" alt="menu-hamburguesa"></button>
+                <button id="boton-modo-claro"><img src="images/modoclaro.png" alt="modo-claro"></button>
+            </div>
+            
+            <nav id="nav">
+                <ul>
+                    <li> <a href="inicio.html">Inicio</a></li>
+                    <li> <a href="indexs/biografia.html">Biografia</a></li>
+                    <li> <a href="indexs/bibliografia.html">Bibliografia</a></li>
+                </ul>
+            </nav>            
+        </div>        
+    </header>
+
+    <section id="banner">
+        <div class="contenido-banner">
+            <div>
+                <h2>Nuevo libro:</h2>
+                <h4>Continua la vida de frederick starks</h4>            
+            </div>
+            <div>
+                <a href="https://cuspide.com/producto/el-psicoanalista-en-la-mira" class="boton-banner" target="_blank">Conseguilo ahora</a>
+            </div>
+        </div> 
+    </section>    
+    
+    
+    <section id="contacto">
+        <h4>Contacto</h4>
+
+        <form id="formulario">
+            
+            <div class="datos-personales">
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+            </div>
+
+            <div class="contenedor-textarea">
+                <label>Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>  
+            </div>
+
+            <div class="contenedor-captcha">
+                <h3>Validar captcha</h3>
+                <img id="captcha" alt="">
+                <label>Ingresa el valor del captcha</label>
+                <input type="text" name="valor-captcha" placeholder="Mensaje" required>
+                <p id="mensaje-captcha"></p>
+            </div>
+
+            <div class="contenedor-boton">
+                <button class="boton-enviar" type="submit">Enviar</button>
+            </div>
+            
+        </form>
+
+    </section>
+
+    <footer>
+        <h6>seguinos en las redes</h6>
+
+        <div class="social">
+            <div>
+                <a href="https://www.facebook.com/authorjohnkatzenbach/?locale=es_LA" target="_blank">
+                    <img src="images/logo de facebook.jpg" alt="logofacebook">
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.instagram.com/katzenbachjohn/" target="_blank">
+                    <img src="images/logo de instagram.jpg" alt="logoinstagram">
+                </a>
+            </div>
+        </div>        
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/captcha.js"></script>
+</body>
+</html>
